@@ -1,6 +1,7 @@
 import ContactForm from "./Challenge/ContactForm";
 import Home from "./Challenge/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import StarRating from "./Challenge/StarRating";
 
 const routing = createBrowserRouter([
   {
@@ -10,6 +11,10 @@ const routing = createBrowserRouter([
   {
     path: "/contactForm",
     element: <ContactForm/>
+  },
+  {
+    path: "/start-rating",
+    element: <StarRating/>
   }
 ]);
 const AppRouter = () => {
