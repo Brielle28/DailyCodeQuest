@@ -14,11 +14,11 @@ const StarRating = () => {
   };
 
   return (
-    <div className="flex flex-col-reverse items-start justify-start w-full min-h-screen bg-white md:flex-row">
+    <div className="flex flex-col-reverse items-start justify-start w-full min-h-screen bg-black md:flex-row">
       {/* Left section - Star rating */}
       <div className="w-full md:w-[60%] min-h-screen flex flex-col items-start justify-start p-5">
-        <h1 className="text-[30px] md:text-[40px] font-bold">
-          Kindly Rate <i className="text-blue-400">Daily Code Quest</i>
+        <h1 className="text-[30px] md:text-[40px] font-bold text-[#63ad58]">
+          Kindly Rate <i className="text-[#63ad58]">Daily Code Quest</i>
         </h1>
         <div className="flex items-center w-full gap-6 mt-10 sm:gap-10 md:gap-14">
           {[1, 2, 3, 4, 5].map((i) => (
@@ -28,9 +28,9 @@ const StarRating = () => {
               className="focus:outline-none"
             >
               {i <= star ? (
-                <FaStar className="text-[40px] sm:text-[50px] md:text-[70px] text-blue-500" />
+                <FaStar className="text-[40px] sm:text-[50px] md:text-[70px] text-[#63ad58] outline-[#63ad58]" />
               ) : (
-                <IoIosStarOutline className="text-[40px] sm:text-[50px] md:text-[70px]" />
+                <IoIosStarOutline className="text-[40px] sm:text-[50px] md:text-[70px] text-[#63ad58]" />
               )}
             </button>
           ))}
@@ -73,11 +73,11 @@ const StarRating = () => {
       </div>
 
       {/* Right section - Question */}
-      <div className="w-full md:w-[40%] min-h-screen flex flex-col items-start justify-start border-b-2 md:border-b-0 md:border-l-2 border-blue-500 p-5">
-        <h1 className="text-[24px] md:text-[30px] text-blue-500 font-bold mb-4">
+      <div className="w-full md:w-[40%] min-h-screen flex flex-col items-start justify-start border-b-2 md:border-b-0 md:border-l-2 border-[#63ad58] p-5">
+        <h1 className="text-[24px] md:text-[30px] text-[#63ad58] font-bold mb-4">
           Question
         </h1>
-        <div className="text-base leading-relaxed text-gray-700 md:text-lg">
+        <div className="text-base leading-relaxed text-[white] md:text-lg">
           Create an interactive star rating component using React and Tailwind
           CSS.
           <br />

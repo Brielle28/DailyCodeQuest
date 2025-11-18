@@ -2,6 +2,7 @@ import ContactForm from "./Challenge/ContactForm";
 import Home from "./Challenge/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import StarRating from "./Challenge/StarRating";
+import ListManager from "./Challenge/ListManager";
 
 const routing = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const routing = createBrowserRouter([
   {
     path: "/start-rating",
     element: <StarRating/>
+  },
+  {
+    path: "/list-manager",
+    element: <ListManager/>
   }
 ]);
 const AppRouter = () => {
